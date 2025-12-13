@@ -6,40 +6,39 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
     "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Pandas",
+    "NumPy",
+    "scikit-learn",
+    "Data Analysis",
+    "Statistics",
+    "Data Visualisation"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
     "Docker",
     "AWS",
-    "Azure",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "ETL Pipelines",
+    "Model Deployment",
+    "Git",
+    "CI/CD",
+    "APIs"
 ];
+
 
 const labelsThird = [
     "OpenAI",
-    "Groq",
     "LangChain",
-    "Qdrant",
-    "Hugging Face",
     "LlamaIndex",
-    "Streamlit",
+    "Vector Databases",
+    "RAG",
+    "Prompt Engineering",
+    "Hugging Face",
+    "Streamlit"
 ];
+
 
 function Expertise() {
     return (
@@ -49,8 +48,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Data Analysis & Modelling</h3>
+                    <p>I work with structured and unstructured data to extract insights, build predictive models, and support data-driven decision making. My work includes exploratory data analysis, feature engineering, and model evaluation.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -61,8 +60,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <h3>ML Systems & Data Engineering</h3>
+                    <p>I design and maintain data pipelines and machine learning systems, focusing on reliability, scalability, and reproducibility. This includes data ingestion, model deployment, and workflow automation.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -73,8 +72,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>GenAI & LLM Applications</h3>
+                    <p>I build GenAI-powered applications using modern LLM frameworks, focusing on retrieval-augmented generation, prompt design, and real-world use cases that enhance user workflows and decision-making.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

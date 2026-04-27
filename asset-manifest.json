@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio-template/static/css/main.7463f2ff.css",
-    "main.js": "/react-portfolio-template/static/js/main.27bd9001.js",
+    "main.css": "/react-portfolio-template/static/css/main.93ea4347.css",
+    "main.js": "/react-portfolio-template/static/js/main.a4326fcf.js",
     "static/js/453.b05d8aa5.chunk.js": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js",
-    "static/media/mock08.png": "/react-portfolio-template/static/media/mock08.13f46873fdbd382f4b76.png",
+    "static/media/stanford-ai-index-2026.png": "/react-portfolio-template/static/media/stanford-ai-index-2026.4739ca8a2a8eeac97d2c.png",
     "static/media/bg-light.png": "/react-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock05.png": "/react-portfolio-template/static/media/mock05.4faafa70d200d1519a34.png",
     "static/media/bg-dark.png": "/react-portfolio-template/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/plastic-bag-thumbnail.png": "/react-portfolio-template/static/media/plastic-bag-thumbnail.1b69776a029331c7765c.png",
     "index.html": "/react-portfolio-template/index.html",
-    "main.7463f2ff.css.map": "/react-portfolio-template/static/css/main.7463f2ff.css.map",
-    "main.27bd9001.js.map": "/react-portfolio-template/static/js/main.27bd9001.js.map",
+    "main.93ea4347.css.map": "/react-portfolio-template/static/css/main.93ea4347.css.map",
+    "main.a4326fcf.js.map": "/react-portfolio-template/static/js/main.a4326fcf.js.map",
     "453.b05d8aa5.chunk.js.map": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7463f2ff.css",
-    "static/js/main.27bd9001.js"
+    "static/css/main.93ea4347.css",
+    "static/js/main.a4326fcf.js"
   ]
 }

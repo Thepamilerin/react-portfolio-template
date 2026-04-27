@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
 import mock08 from '../assets/images/mock08.png';
+import plasticBagThumb from '../assets/images/plastic-bag-thumbnail.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -16,7 +17,7 @@ function Project() {
                 <div className="project featured-project">
                     <Link to="/analysis/plastic-bag-charge">
                         <img
-                            src={mock04}
+                            src={plasticBagThumb}
                             className="zoom"
                             alt="Did the plastic bag charge actually work?"
                             width="100%"
@@ -31,7 +32,7 @@ function Project() {
                     <p>
                         A statistical analysis of nine years of Defra data on single-use plastic
                         carrier bags in England. The headline says the charge worked. The data
-                        says something more interesting &mdash; and reveals what the public dataset
+                        says something more interesting and reveals what the public dataset
                         is structurally unable to tell us.
                     </p>
                 </div>

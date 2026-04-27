@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
 import mock08 from '../assets/images/mock08.png';
@@ -7,25 +8,31 @@ import '../assets/styles/Project.scss';
 function Project() {
     return (
         <div className="projects-container" id="projects">
-            <h1>Personal Projects</h1>
+            <h1>Projects</h1>
 
             <div className="projects-grid">
 
-                {/* Customer Churn Prediction */}
-                <div className="project">
-                    <a href="#" target="_blank" rel="noreferrer">
+                {/* Plastic Bag Charge Analysis — featured case study */}
+                <div className="project featured-project">
+                    <Link to="/analysis/plastic-bag-charge">
                         <img
                             src={mock04}
                             className="zoom"
-                            alt="Customer Churn Prediction"
+                            alt="Did the plastic bag charge actually work?"
                             width="100%"
                         />
-                    </a>
-                    <h2>Customer Churn Prediction</h2>
+                    </Link>
+                    <span className="project-tag">Case study</span>
+                    <h2>
+                        <Link to="/analysis/plastic-bag-charge">
+                            Did the plastic bag charge actually work?
+                        </Link>
+                    </h2>
                     <p>
-                        Built a machine learning model to predict customer churn using historical
-                        customer data. Performed exploratory data analysis, feature engineering,
-                        and model evaluation to support retention-focused business decisions.
+                        A statistical analysis of nine years of Defra data on single-use plastic
+                        carrier bags in England. The headline says the charge worked. The data
+                        says something more interesting &mdash; and reveals what the public dataset
+                        is structurally unable to tell us.
                     </p>
                 </div>
 
@@ -39,7 +46,7 @@ function Project() {
                             width="100%"
                         />
                     </a>
-                    <h2>Sales & Revenue Performance Analysis</h2>
+                    <h2>Sales &amp; Revenue Performance Analysis</h2>
                     <p>
                         Analysed multi-year sales and revenue data to identify growth drivers,
                         seasonality patterns, and performance gaps. Communicated insights through

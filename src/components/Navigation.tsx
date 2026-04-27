@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -19,9 +20,11 @@ import Toolbar from '@mui/material/Toolbar';
 const drawerWidth = 240;
 const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
 
-function Navigation({parentToChild, modeChange}: any) {
+function Navigation({ parentToChild, modeChange }: any) {
 
-  const {mode} = parentToChild;
+  const { mode } = parentToChild;
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -46,14 +49,17 @@ function Navigation({parentToChild, modeChange}: any) {
     };
   }, []);
 
-  const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+  const goToSection = (section: string) => {
+    if (location.pathname !== '/') {
+      // Navigate home first, then scroll once the home content has rendered
+      navigate('/');
+      setTimeout(() => {
+        const el = document.getElementById(section);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      const el = document.getElementById(section);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -62,9 +68,14 @@ function Navigation({parentToChild, modeChange}: any) {
       <p className="mobile-menu-top"><ListIcon/>Menu</p>
       <Divider />
       <List>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: 'center' }} component={Link} to="/">
+            <ListItemText primary="Home" />
+          </ListItemButton>
+        </ListItem>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => goToSection(item[1])}>
               <ListItemText primary={item[0]} />
             </ListItemButton>
           </ListItem>
@@ -88,13 +99,13 @@ function Navigation({parentToChild, modeChange}: any) {
             <MenuIcon />
           </IconButton>
           {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
+            <LightModeIcon onClick={() => modeChange()} style={{ cursor: 'pointer' }}/>
           ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
+            <DarkModeIcon onClick={() => modeChange()} style={{ cursor: 'pointer' }}/>
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+              <Button key={item[0]} onClick={() => goToSection(item[1])} sx={{ color: '#fff' }}>
                 {item[0]}
               </Button>
             ))}
@@ -107,7 +118,7 @@ function Navigation({parentToChild, modeChange}: any) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

@@ -47,3 +47,22 @@
         }
     }
 }
+/* Featured project (case study) */
+.project-tag {
+    display: inline-block;
+    color: #5000ca;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 12px 0 4px 0;
+}
+
+.featured-project h2 a {
+    color: inherit;
+    transition: color .15s ease-in-out;
+}
+
+.featured-project h2 a:hover {
+    color: #5000ca;
+}

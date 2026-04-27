@@ -8,6 +8,17 @@
         color: white;
     }
 }
+
+.skills-container .expertise-intro {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: -8px 0 30px 0;
+    font-style: italic;
+}
+
+.light-mode .skills-container .expertise-intro {
+    color: rgba(13, 17, 22, 0.6);
+}
   
 .skills-container .skills-grid {
     display: grid;
@@ -18,6 +29,10 @@
 .skills-container .skills-grid .skill {
     align-items: center;
     text-align: left;
+}
+
+.skills-container .skills-grid .skill p {
+    line-height: 1.6;
 }
   
 .chip {
@@ -44,6 +59,10 @@
         color: white;
         padding-right: 10px;
     }
+}
+
+.light-mode .flex-chips .chip-title {
+    color: rgb(39, 40, 34);
 }
 
 .flex-chips .MuiChip-root {

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock08 from '../assets/images/mock08.png';
+import stanfordCover from '../assets/images/stanford-ai-index-2026.png';
 import plasticBagThumb from '../assets/images/plastic-bag-thumbnail.png';
 import '../assets/styles/Project.scss';
 
@@ -13,7 +11,40 @@ function Project() {
 
             <div className="projects-grid">
 
-                {/* Plastic Bag Charge Analysis — featured case study */}
+                {/* Stanford AI Index 2026 — featured */}
+                <div className="project featured-project">
+                    <a
+                        href="https://aiindex.stanford.edu/report/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img
+                            src={stanfordCover}
+                            className="zoom"
+                            alt="Stanford AI Index Report 2026"
+                            width="100%"
+                        />
+                    </a>
+                    <span className="project-tag">Named contributor</span>
+                    <h2>
+                        <a
+                            href="https://aiindex.stanford.edu/report/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Stanford AI Index 2026
+                        </a>
+                    </h2>
+                    <p>
+                        Named contributor to the Research &amp; Development chapter of
+                        the 2026 edition of Stanford HAI's annual AI Index, the most
+                        widely-cited reference on the state of AI globally. Contributed
+                        talent and workforce data alongside ~30 other named contributors
+                        from research and industry.
+                    </p>
+                </div>
+
+                {/* Plastic Bag Charge Analysis */}
                 <div className="project featured-project">
                     <Link to="/analysis/plastic-bag-charge">
                         <img
@@ -30,46 +61,22 @@ function Project() {
                         </Link>
                     </h2>
                     <p>
-                        A statistical analysis of nine years of Defra data on single-use plastic
-                        carrier bags in England. The headline says the charge worked. The data
-                        says something more interesting and reveals what the public dataset
-                        is structurally unable to tell us.
+                        A statistical analysis of nine years of Defra data on
+                        single-use plastic carrier bags in England. The headline says
+                        the charge worked. The data says something more interesting,
+                        and reveals what the public dataset is structurally unable to
+                        tell us.
                     </p>
                 </div>
 
-                {/* Sales & Revenue Performance Analysis */}
-                <div className="project">
-                    <a href="#" target="_blank" rel="noreferrer">
-                        <img
-                            src={mock05}
-                            className="zoom"
-                            alt="Sales & Revenue Performance Analysis"
-                            width="100%"
-                        />
-                    </a>
-                    <h2>Sales &amp; Revenue Performance Analysis</h2>
+                {/* NHS Waiting Lists Explorer — in progress */}
+                <div className="project in-progress-project">
+                    <span className="project-tag in-progress-tag">In progress</span>
+                    <h2>NHS waiting lists explorer</h2>
                     <p>
-                        Analysed multi-year sales and revenue data to identify growth drivers,
-                        seasonality patterns, and performance gaps. Communicated insights through
-                        clear summaries and data visualisations for non-technical stakeholders.
-                    </p>
-                </div>
-
-                {/* GenAI Question Answering System */}
-                <div className="project">
-                    <a href="#" target="_blank" rel="noreferrer">
-                        <img
-                            src={mock08}
-                            className="zoom"
-                            alt="GenAI Question Answering System"
-                            width="100%"
-                        />
-                    </a>
-                    <h2>GenAI Question Answering System</h2>
-                    <p>
-                        Developed a GenAI-powered question answering system using large language
-                        models and retrieval-augmented generation. Integrated document ingestion,
-                        vector search, and prompt engineering to improve response relevance and accuracy.
+                        An interactive tool for exploring NHS England waiting list data
+                        by trust and specialty, with light forecasting on where current
+                        trajectories lead. Coming soon.
                     </p>
                 </div>
 

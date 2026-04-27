@@ -1,42 +1,36 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faChartLine, faServer, faFlaskVial } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
-const labelsFirst = [
-    "Python",
-    "SQL",
-    "Pandas",
-    "NumPy",
+// Card-specific chips. Languages (Python, SQL) are mentioned once globally,
+// not in every card, so each card's chips actually differentiate.
+const decisionChips = [
+    "Forecasting",
+    "Scoring methodologies",
+    "Statistical modelling",
+    "Regression analysis",
     "scikit-learn",
-    "Data Analysis",
-    "Statistics",
-    "Data Visualisation"
 ];
 
-const labelsSecond = [
-    "Docker",
+const pipelineChips = [
+    "Snowflake",
     "AWS",
-    "Linux",
-    "ETL Pipelines",
-    "Model Deployment",
+    "Athena",
+    "dbt-style modelling",
     "Git",
-    "CI/CD",
-    "APIs"
+    "Orchestration",
 ];
 
-
-const labelsThird = [
-    "OpenAI",
-    "LangChain",
-    "LlamaIndex",
-    "Vector Databases",
-    "RAG",
-    "Prompt Engineering",
-    "Hugging Face",
-    "Streamlit"
+const experimentChips = [
+    "A/B testing",
+    "Cohort analysis",
+    "CLV",
+    "Statistical inference",
+    "Tableau",
+    "Power BI",
 ];
 
 
@@ -45,38 +39,61 @@ function Expertise() {
     <div className="container" id="expertise">
         <div className="skills-container">
             <h1>Expertise</h1>
+            <p className="expertise-intro">
+                Built primarily in Python and SQL.
+            </p>
             <div className="skills-grid">
+
+                {/* Card 1 — Decision Systems & Modelling */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Data Analysis & Modelling</h3>
-                    <p>I work with structured and unstructured data to extract insights, build predictive models, and support data-driven decision making. My work includes exploratory data analysis, feature engineering, and model evaluation.</p>
+                    <FontAwesomeIcon icon={faChartLine} size="3x"/>
+                    <h3>Decision Systems &amp; Modelling</h3>
+                    <p>
+                        I build the analytical objects organisations actually act on:
+                        scoring engines, forecasting models, benchmarking frameworks.
+                        Defining what the model is for, who'll use it, and what failure
+                        modes matter.
+                    </p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
+                        {decisionChips.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
+                {/* Card 2 — Data Pipelines & Infrastructure */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>ML Systems & Data Engineering</h3>
-                    <p>I design and maintain data pipelines and machine learning systems, focusing on reliability, scalability, and reproducibility. This includes data ingestion, model deployment, and workflow automation.</p>
+                    <FontAwesomeIcon icon={faServer} size="3x"/>
+                    <h3>Data Pipelines &amp; Infrastructure</h3>
+                    <p>
+                        Turning messy organisational data into reliable analytical
+                        foundations. I've engineered ingestion and processing pipelines
+                        on tens of millions of records, including the unglamorous parts:
+                        deduplication, schema evolution, late-arriving data, and the
+                        documentation that means anyone else can use what I've built.
+                    </p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
+                        {pipelineChips.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
+                {/* Card 3 — Experimentation & Behavioural Analysis */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM Applications</h3>
-                    <p>I build GenAI-powered applications using modern LLM frameworks, focusing on retrieval-augmented generation, prompt design, and real-world use cases that enhance user workflows and decision-making.</p>
+                    <FontAwesomeIcon icon={faFlaskVial} size="3x"/>
+                    <h3>Experimentation &amp; Behavioural Analysis</h3>
+                    <p>
+                        A/B testing and behavioural segmentation done properly:
+                        pre-registration, power, peeking, segment effects. I've used this
+                        to inform product, marketing, and retention decisions, including
+                        driving an 18% reduction in churn at a previous role.
+                    </p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
+                        {experimentChips.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>

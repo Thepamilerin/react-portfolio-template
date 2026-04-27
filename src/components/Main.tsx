@@ -4,40 +4,46 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Main.scss";
 
 function Main() {
-  const fixedPrefix = "Data ";
-  const roles = ["Analyst", "Scientist"];
+  // Rotating skill labels — each is a real thing I do, not a job title
+  const skills = [
+    "Forecasting models",
+    "Scoring engines",
+    "Decision frameworks",
+    "Pipelines & infrastructure",
+    "Behavioural analysis",
+  ];
 
-  const [roleIndex, setRoleIndex] = useState(0);
-  const [displayText, setDisplayText] = useState(roles[0]);
+  const [skillIndex, setSkillIndex] = useState(0);
+  const [displayText, setDisplayText] = useState(skills[0]);
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentRole = roles[roleIndex];
+    const currentSkill = skills[skillIndex];
     let timeout: NodeJS.Timeout;
 
-    if (!isDeleting && displayText.length < currentRole.length) {
+    if (!isDeleting && displayText.length < currentSkill.length) {
       // Typing
       timeout = setTimeout(() => {
-        setDisplayText(currentRole.slice(0, displayText.length + 1));
-      }, 120);
-    } else if (!isDeleting && displayText.length === currentRole.length) {
-      // Pause after typing
+        setDisplayText(currentSkill.slice(0, displayText.length + 1));
+      }, 70);
+    } else if (!isDeleting && displayText.length === currentSkill.length) {
+      // Pause once fully typed
       timeout = setTimeout(() => {
         setIsDeleting(true);
-      }, 1500);
+      }, 2000);
     } else if (isDeleting && displayText.length > 0) {
       // Deleting
       timeout = setTimeout(() => {
-        setDisplayText(currentRole.slice(0, displayText.length - 1));
-      }, 80);
+        setDisplayText(currentSkill.slice(0, displayText.length - 1));
+      }, 40);
     } else if (isDeleting && displayText.length === 0) {
-      // Switch role
+      // Switch to next skill
       setIsDeleting(false);
-      setRoleIndex((prev) => (prev + 1) % roles.length);
+      setSkillIndex((prev) => (prev + 1) % skills.length);
     }
 
     return () => clearTimeout(timeout);
-  }, [displayText, isDeleting, roleIndex, roles]);
+  }, [displayText, isDeleting, skillIndex, skills]);
 
   return (
     <div className="container">
@@ -69,9 +75,13 @@ function Main() {
 
           <h1>Khalifa Banji</h1>
 
-          {/* Typewriter Role */}
-          <p style={{ whiteSpace: "nowrap" }}>
-            {fixedPrefix}
+          <p className="hero-tagline">
+            Applied data scientist. I build forecasting models, scoring engines,
+            and analytical products that ship to real users.
+          </p>
+
+          {/* Rotating skill */}
+          <p className="hero-typewriter">
             <span>{displayText}</span>
             <span className="cursor">|</span>
           </p>

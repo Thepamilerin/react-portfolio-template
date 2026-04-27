@@ -119,8 +119,8 @@ function PlasticBagAnalysis() {
         </p>
         <p>
           But two things in this chart deserve a second look. Almost all of the drop happens
-          between 2016-17 and 2019-20. The line then goes flat from 2020 onwards, and ticks
-          back <em>up</em> in the most recent year.
+          between 2016-17 and 2019-20. The line then goes flat from 2020 onwards &mdash;
+          and ticks back <em>up</em> in the most recent year.
         </p>
 
         {/* ===== Section 2 ===== */}
@@ -155,7 +155,7 @@ function PlasticBagAnalysis() {
 
         <p>
           Per-capita bags went from 8.6 in the year before the increase, to 8.8, then 7.7,
-          then 7.1, before rising back to 7.6 in 2024-25. The 10p landed in a market where
+          then 7.1 &mdash; and then back to 7.6 in 2024-25. The 10p landed in a market where
           the price-sensitive customers were already gone. The remaining demand at this
           scale is essentially price-inelastic.
         </p>
@@ -170,9 +170,9 @@ function PlasticBagAnalysis() {
         <p>
           The seven "main retailers" Defra tracks are Asda, M&amp;S, Morrisons, Sainsbury's,
           Tesco, Waitrose and the Co-op. In 2016-17 these seven accounted for 63% of all
-          single-use plastic bags reported in England. By 2024-25, three of them (Tesco,
-          M&amp;S, and Waitrose) sell zero, having exited the category entirely. Their
-          share of total reported bags is down to 38%.
+          single-use plastic bags reported in England. By 2024-25, three of them
+          &mdash; Tesco, M&amp;S, and Waitrose &mdash; sell zero, having exited the category
+          entirely. Their share of total reported bags is down to 38%.
         </p>
 
         <figure className="chart-figure">
@@ -201,9 +201,9 @@ function PlasticBagAnalysis() {
         </figure>
 
         <p>
-          One retailer in the group is a clear outlier: single-use bag sales barely moved
+          One retailer in the group is a clear outlier &mdash; single-use bag sales barely moved
           over a decade where every other major supermarket fell by 99%+ or stopped entirely.
-          The metadata explains why. That retailer's figures were repeatedly revised upward
+          The metadata explains why: that retailer's figures were repeatedly revised upward
           to incorporate single-use compostable plastic bags that other retailers don't
           include in their returns. The comparison isn't like-for-like.
         </p>
@@ -215,26 +215,26 @@ function PlasticBagAnalysis() {
         </p>
         <p>
           The broader shift matters more. Plastic bag sales have moved away from large
-          supermarkets and toward smaller and mid-size retailers, including clothing,
-          hardware, and convenience, where the policy lever is weaker and the public
-          attention isn't. That's where the remaining 437 million bags a year are coming from.
+          supermarkets and toward smaller and mid-size retailers &mdash; clothing, hardware,
+          convenience &mdash; where the policy lever is weaker and the public attention isn't.
+          That's where the remaining 437 million bags a year are coming from.
         </p>
 
         {/* ===== Section 4 ===== */}
         <h2>What this dataset cannot tell us</h2>
         <p>
-          The most important question is whether people just switched to bags-for-life and
-          bin liners. This dataset cannot answer it. That itself is a finding.
+          The most important question &mdash; <em>did people just switch to bags-for-life
+          and bin liners?</em> &mdash; cannot be answered from this data. That itself is a finding.
         </p>
         <p>
           Defra collects bag-for-life numbers on a <strong>voluntary</strong> basis, and it
           shows. Aldi reported 106 million bags-for-life in 2019-20, then disappeared from
-          bag-for-life reporting in subsequent years. Tesco (for years the largest
-          single-use bag retailer) has never reported a bag-for-life figure, in any year of
-          this dataset. Waitrose reported 28 million in 2021-22, then exited the dataset
-          entirely from 2022-23 because they stopped selling single-use plastic bags.
-          Defra's collection scope is conditional on selling single-use bags, so retailers
-          who quit the category vanish from the bag-for-life figures too.
+          bag-for-life reporting in subsequent years. Tesco &mdash; for years the largest
+          single-use bag retailer &mdash; has never reported a bag-for-life figure, in any year
+          of this dataset. Waitrose reported 28 million in 2021-22, then exited the dataset
+          entirely from 2022-23 because they stopped selling single-use plastic bags
+          (Defra's collection scope is conditional on selling single-use bags, so retailers
+          who quit the category vanish from the bag-for-life figures too).
         </p>
         <p>
           Total reported bag-for-life sales in this dataset go from 132 million in 2019-20
@@ -246,8 +246,8 @@ function PlasticBagAnalysis() {
           A serious answer to the displacement question would need different data: WRAP's
           consumer surveys, retailer disclosures, or product-level scanner data. The Defra
           dataset measures the policy's compliance instrument, not its environmental
-          outcome. Some research, including the Environment Agency's 2011 lifecycle
-          assessment, suggests bags-for-life can be more polluting per unit than the
+          outcome. Some research &mdash; including the Environment Agency's 2011 lifecycle
+          assessment &mdash; suggests bags-for-life can be more polluting per unit than the
           single-use bags they replace, depending on reuse rates. If displacement was
           substantial, the environmental win is much smaller than the bag-count drop
           implies. The honest answer is that we don't know, and the public data isn't
@@ -261,12 +261,13 @@ function PlasticBagAnalysis() {
           the retailers in scope. The 81% per-capita drop is real and it is durable.
         </p>
         <p>
-          The bigger claims need more care. The 2021 doubling appears to have done little on
-          its own. The policy's effect was nearly fully cashed in by 2020. And the question
-          that actually matters environmentally, whether total plastic-bag consumption fell
-          or just shifted into a different reporting category, is one this dataset is
-          structurally incapable of answering. Anyone telling you the charge "saved X tonnes
-          of plastic" is reaching beyond what the public data supports.
+          The bigger claims need more care. The 2021 doubling appears to have done little
+          on its own &mdash; the policy's effect was nearly fully cashed in by 2020. And the
+          question that actually matters environmentally &mdash; whether total plastic-bag
+          consumption fell, rather than just shifted into a different reporting category
+          &mdash; is one this dataset is structurally incapable of answering. Anyone telling
+          you the charge "saved X tonnes of plastic" is reaching beyond what the public data
+          supports.
         </p>
         <p>
           The 2024-25 uptick (the first increase in the series) is probably noise, but it's
@@ -278,10 +279,10 @@ function PlasticBagAnalysis() {
         {/* ===== Section 6 ===== */}
         <h2>What I'd want to know to be more sure</h2>
         <ul className="analysis-list">
-          <li>Bag-for-life sales by retailer with mandatory reporting, to settle the displacement question.</li>
+          <li>Bag-for-life sales by retailer with mandatory reporting &mdash; to settle the displacement question.</li>
           <li>Total plastic-by-weight from carrier bags (single-use + bags-for-life), since the environmental question is about plastic mass, not bag count.</li>
-          <li>Equivalent data from Wales and Scotland, which introduced charges earlier and at different rates, as natural counterfactuals.</li>
-          <li>Consumer survey data on bag-bringing behaviour, to separate "stopped using bags" from "switched to a different bag type."</li>
+          <li>Equivalent data from Wales and Scotland, which introduced charges earlier and at different rates &mdash; natural counterfactuals.</li>
+          <li>Consumer survey data on bag-bringing behaviour &mdash; to separate "stopped using bags" from "switched to a different bag type."</li>
         </ul>
 
         <hr className="analysis-rule"/>

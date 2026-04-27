@@ -14,69 +14,31 @@ function Timeline() {
 
         <VerticalTimeline>
 
-          {/* Data Scientist */}
+          {/* Zeki Data */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
-            date="Oct 2025 – Present"
+            date="Oct 2024 – Present"
             iconStyle={{ background: '#5000ca', color: '#fff' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
               Data Scientist
+              <span className="company-name"> · Zeki Data</span>
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               London, England
             </h4>
             <p>
-              Working on advanced analytics and machine learning problems, translating complex datasets
-              into actionable insights. Focus areas include predictive modelling, experimentation,
-              and supporting strategic decision-making with data-driven evidence.
+              Lead analyst on the State of AI Talent product, an annual flagship
+              publication on the global movement of frontier AI talent. Built the
+              scoring methodology and the SQL infrastructure behind it. Cited by
+              the Wall Street Journal, Financial Times, and Semafor.
             </p>
           </VerticalTimelineElement>
 
-          {/* Senior Data Analyst */}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Mar 2025 – Oct 2025"
-            iconStyle={{ background: '#5000ca', color: '#fff' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Senior Data Analyst
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              London, England
-            </h4>
-            <p>
-              Led complex analytical work across customer behaviour, revenue, and performance metrics.
-              Built dashboards and analytical frameworks using SQL, Python, and BI tools to inform
-              product, marketing, and operational strategy.
-            </p>
-          </VerticalTimelineElement>
-
-          {/* Data Analyst */}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Oct 2024 – Mar 2025"
-            iconStyle={{ background: '#5000ca', color: '#fff' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Data Analyst
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              London, England
-            </h4>
-            <p>
-              Analysed large structured datasets to identify trends, performance drivers,
-              and operational insights. Supported stakeholders through reporting,
-              ad-hoc analysis, and data visualisation.
-            </p>
-          </VerticalTimelineElement>
-
-          {/* Product / Customer Data Analyst */}
+          {/* Secret Sales */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Aug 2023 – Oct 2024"
@@ -84,19 +46,42 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Product & Customer Data Analyst
+              Product &amp; Customer Data Analyst
+              <span className="company-name"> · Secret Sales</span>
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               London, England (Remote)
             </h4>
             <p>
-              Analysed customer behaviour, sales performance, and engagement metrics to
-              improve retention and product adoption. Built dashboards and conducted
-              experimentation to inform product and marketing decisions.
+              Customer behaviour, retention, and CLV analysis for a fashion
+              marketplace. Designed and ran the A/B testing programme. The work
+              I'm proudest of: a segmentation model that materially shifted churn.
             </p>
           </VerticalTimelineElement>
 
-          {/* Assistant Lead / Product Data Analyst */}
+          {/* PixelMixer */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Aug 2022 – Jun 2023"
+            iconStyle={{ background: '#5000ca', color: '#fff' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Data Analyst
+              <span className="company-name"> · PixelMixer</span>
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              California (Remote)
+            </h4>
+            <p>
+              Market and product analysis supporting the launch of five digital
+              products. The kind of cross-functional role where the analyst is
+              the only one who can see across engineering, design, and marketing
+              at once.
+            </p>
+          </VerticalTimelineElement>
+
+          {/* Eagle Global Markets */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jun 2020 – Jul 2022"
@@ -105,18 +90,19 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">
               Assistant Lead, Product Data Analyst
+              <span className="company-name"> · Eagle Global Markets</span>
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               London, England (Remote)
             </h4>
             <p>
-              Supported the design and launch of a financial trading platform through
-              data analysis, market research, and user testing. Built and maintained
-              analytical databases to improve operational efficiency and decision-making.
+              Analytical lead for the launch of a Naira trading platform. Market
+              sizing, behavioural analysis of early users, and ongoing measurement
+              of registration and engagement.
             </p>
           </VerticalTimelineElement>
 
-          {/* Team Lead, Data Analyst */}
+          {/* Dangote Industries */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jan 2019 – May 2020"
@@ -125,14 +111,15 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">
               Team Lead, Data Analyst
+              <span className="company-name"> · Dangote Industries</span>
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Lagos, Nigeria
             </h4>
             <p>
-              Led data initiatives including large-scale database implementation,
-              access-control analytics, and fraud reduction. Delivered analytical
-              insights that improved operational efficiency and reduced costs.
+              Built an enterprise employee database covering 100,000+ records,
+              plus the access-control analytics layer on top. My first taste of
+              data work that mattered to the business.
             </p>
           </VerticalTimelineElement>
 

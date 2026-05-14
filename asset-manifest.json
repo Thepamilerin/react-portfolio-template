@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio-template/static/css/main.93ea4347.css",
-    "main.js": "/react-portfolio-template/static/js/main.4814f98f.js",
+    "main.js": "/react-portfolio-template/static/js/main.ce71b4fb.js",
     "static/js/453.b05d8aa5.chunk.js": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js",
     "static/media/stanford-ai-index-2026.png": "/react-portfolio-template/static/media/stanford-ai-index-2026.4739ca8a2a8eeac97d2c.png",
     "static/media/bg-light.png": "/react-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
@@ -10,11 +10,11 @@
     "static/media/ab-test-thumbnail.svg": "/react-portfolio-template/static/media/ab-test-thumbnail.77a9dc9cecf4f5e368b9648571efc1e3.svg",
     "index.html": "/react-portfolio-template/index.html",
     "main.93ea4347.css.map": "/react-portfolio-template/static/css/main.93ea4347.css.map",
-    "main.4814f98f.js.map": "/react-portfolio-template/static/js/main.4814f98f.js.map",
+    "main.ce71b4fb.js.map": "/react-portfolio-template/static/js/main.ce71b4fb.js.map",
     "453.b05d8aa5.chunk.js.map": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93ea4347.css",
-    "static/js/main.4814f98f.js"
+    "static/js/main.ce71b4fb.js"
   ]
 }

@@ -85,7 +85,7 @@ function Project() {
                     <span className="project-tag">Experimentation</span>
                     <h2>
                         <a
-                            href="https://khalifabanji.github.io/ab-test-onboarding-analysis"
+                            href="https://thepamilerin.github.io/ab-test-onboarding-analysis"
                             target="_blank"
                             rel="noreferrer"
                         >

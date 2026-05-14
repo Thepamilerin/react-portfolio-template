@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import stanfordCover from '../assets/images/stanford-ai-index-2026.png';
 import plasticBagThumb from '../assets/images/plastic-bag-thumbnail.png';
-import abTestThumb from '../assets/images/ab-test-thumbnail.png';
+import abTestThumb from '../assets/images/ab-test-thumbnail.svg';
 import '../assets/styles/Project.scss';
 
 function Project() {

@@ -2,15 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import stanfordCover from '../assets/images/stanford-ai-index-2026.png';
 import plasticBagThumb from '../assets/images/plastic-bag-thumbnail.png';
+import abTestThumb from '../assets/images/ab-test-thumbnail.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
     return (
         <div className="projects-container" id="projects">
             <h1>Projects</h1>
-
             <div className="projects-grid">
-
                 {/* Stanford AI Index 2026 — featured */}
                 <div className="project featured-project">
                     <a
@@ -69,17 +68,38 @@ function Project() {
                     </p>
                 </div>
 
-                {/* NHS Waiting Lists Explorer — in progress */}
-                <div className="project in-progress-project">
-                    <span className="project-tag in-progress-tag">In progress</span>
-                    <h2>NHS waiting lists explorer</h2>
+                {/* A/B Test — Onboarding Friction Experiment */}
+                <div className="project featured-project">
+                    <a
+                        href="https://khalifabanji.github.io/ab-test-onboarding-analysis"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img
+                            src={abTestThumb}
+                            className="zoom"
+                            alt="A/B Test — Onboarding Friction Experiment"
+                            width="100%"
+                        />
+                    </a>
+                    <span className="project-tag">Experimentation</span>
+                    <h2>
+                        <a
+                            href="https://khalifabanji.github.io/ab-test-onboarding-analysis"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            A/B Test — Onboarding Friction Experiment
+                        </a>
+                    </h2>
                     <p>
-                        An interactive tool for exploring NHS England waiting list data
-                        by trust and specialty, with light forecasting on where current
-                        trajectories lead. Coming soon.
+                        End-to-end A/B test analysis on 90,189 users examining the
+                        impact of friction point placement in a consumer app onboarding
+                        flow. Covers power analysis, SRM check, frequentist and
+                        Bayesian testing, segment breakdown, and business impact
+                        quantification.
                     </p>
                 </div>
-
             </div>
         </div>
     );
